@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> <head>
+ <title>HTML Tags Demo</title>
+</head>
+<body>
+ <h1>Welcome!</h1>
+ <p>This is an example paragraph.</p>
+ <br>
+<hr>
+ <!-- This is a comment -->
+ <form>
+ <input type="text" placeholder="Enter text">
+ <textarea placeholder="Type here..."></textarea>
+ <button type="submit">Submit</button>
+ </form>
+ <img src="image.jpg" alt="Example Image">
+ <audio controls>
+ <source src="audio.mp3" type="audio/mpeg">
+ Your browser does not support the audio element.
+ </audio>
+ <a href="#">Click Here</a>
+</body>
+</html>
