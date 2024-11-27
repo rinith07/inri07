@@ -1,0 +1,41 @@
+import React, { useState } from 'react';
+import './App.css'; const App = () => {
+ const [cart, setCart] = useState([]);
+const products = [
+ { id: 1, name: 'Product 1', price: 10, image:
+'minervaseries.png' },
+ { id: 2, name: 'Product 2', price: 20, image:
+'minervaseries.png' },
+ { id: 3, name: 'Product 3', price: 30, image:
+'minervaseries.png' } ];
+ const addToCart = (product) => {
+setCart([...cart, { ...product }]);
+ };
+return (
+ <div className="App">
+ <h2>Products</h2>
+ <ul>
+ {products.map((product) => (
+ <li key={product.id}>
+ <img src={product.image} alt={product.name} width="50"
+height="50" />
+ {product.name} - ${product.price}
+ <button onClick={() => addToCart(product)}>Add to
+Cart</button>
+ </li>
+ ))}
+</ul>
+13
+ <h2>Shopping Cart</h2>
+ <ul>
+ {cart.map((item, index) => (
+ <li key={index}>
+ <img src={item.image} alt={item.name} width="50"
+height="50" />
+ {item.name} - ${item.price}
+ </li>
+ ))}
+ </ul>
+ </div>
+ ); };
+export default App;
