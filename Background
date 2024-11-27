@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Welcome to HTML</title>
+</head>
+<body style="background-color:powderblue;">
+ <h1 style="color: blueviolet;">This is a heading</h1>
+ <p style="color: bisque;">This is a paragraph.</p>
+</body>
+</html>
